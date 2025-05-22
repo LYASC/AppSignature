@@ -1,8 +1,7 @@
-// frontend/src/components/PresenceList.js
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const PresenceList = () => {
+const ListePresences = () => {
   // État pour stocker les présences (variable  presences) (une fonction pour mettre à jour cette liste: setPresences)
   // (mémoir du composant, ici c'est tableau vide de base:useState([]))
   const [presences, setPresences] = useState([]);
@@ -42,4 +41,4 @@ const PresenceList = () => {
   );
 };
 
-export default PresenceList;
+export default ListePresences;
