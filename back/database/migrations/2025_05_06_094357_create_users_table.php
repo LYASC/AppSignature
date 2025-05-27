@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('nom');
             $table->string('prenom');
             $table->string('email')->unique();
+            $table->string('password'); 
             $table->foreignId('id_signature')->nullable()->constrained('signatures')->onDelete('cascade');
             $table->timestamps();
         });
